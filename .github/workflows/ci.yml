@@ -9,10 +9,12 @@ permissions:
   contents: read
 
 jobs:
-  check:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
-      - run: cargo clippy --all-targets -- -D warnings
-      - run: cargo test
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo check --all-features
+      - run: cargo clippy -- -D warnings
+      - run: cargo test --all-features

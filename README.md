@@ -1,3 +1,5 @@
+> Canonical: https://github.com/etamong-playground/httperr-rs | Consumed as git dependency in Cargo.toml
+
 # etamong-httperr (Rust)
 
 Rust port of the etamong-lab cross-app error contract (planning#188).
