@@ -42,3 +42,11 @@ so a single log query `| json | level="error"` matches every fleet app.
 
 - [`httperr`](https://github.com/etamong-playground/httperr) — Go canonical impl
 - [`audit-rs`](https://github.com/etamong-playground/audit-rs) — Rust audit companion
+
+## Acknowledgements
+
+Uses [`serde_json`](https://crates.io/crates/serde_json) (MIT OR Apache-2.0).
+
+## License
+
+MIT — see [LICENSE](LICENSE).
